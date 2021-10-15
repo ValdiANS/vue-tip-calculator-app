@@ -1,5 +1,5 @@
 # vue-tip-calculator-app
-
+Mobile-first solutions using VueJs for tip calculator app challenge by frontendmentor.io
 ## Project setup
 ```
 npm install
