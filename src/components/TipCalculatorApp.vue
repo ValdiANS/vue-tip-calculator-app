@@ -186,7 +186,6 @@ export default {
 
     const isInputError = (value) => value === 0;
 
-    const log = (test) => console.log(test);
     return {
       customTipFocus,
       customTip,
@@ -198,7 +197,6 @@ export default {
       setTip,
       reset,
       disableReset,
-      log,
       isInputError,
     };
   },
