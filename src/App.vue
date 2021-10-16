@@ -1,11 +1,10 @@
 <template>
-  <div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io/profile/ValdiANS" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/ValdiANS" target="_blank">Valdi</a>.
-    </div>
-
     <main>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io/profile/ValdiANS" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/ValdiANS" target="_blank">Valdi</a>.
+      </div>
+
       <h1>
         <span>Spli</span>
         <span>tter</span>
@@ -13,7 +12,6 @@
 
       <tip-calculator-app />
     </main>
-  </div>
 </template>
 
 <script>
@@ -54,6 +52,12 @@ main {
   align-items: center;
   gap: 4em 0;
   padding: 40px 0 0 0;
+
+  .tip-calculator-container {
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+  }
 }
 
 h1 {
@@ -72,12 +76,23 @@ h1 {
 
 .attribution {
   text-align: center;
-  padding: 20px;
 }
 
 @media screen and (min-width: 430px) {
   main {
     padding: 40px;
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 </style>

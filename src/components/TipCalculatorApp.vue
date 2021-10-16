@@ -247,6 +247,8 @@ $white: hsl(0, 0%, 100%);
   width: 100%;
   padding: 20px 0;
 
+  animation: moveInLeft 2s ease;
+
   .input-tag {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -423,6 +425,8 @@ $white: hsl(0, 0%, 100%);
   flex-direction: column;
   justify-content: space-between;
 
+  animation: moveInRight 2s ease;
+
   .information {
     display: flex;
     justify-content: space-between;
@@ -504,6 +508,41 @@ $white: hsl(0, 0%, 100%);
 
   .result {
     padding: 30px;
+  }
+}
+
+// Animation
+@keyframes moveInRight {
+  0% {
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
