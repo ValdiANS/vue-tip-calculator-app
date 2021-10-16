@@ -21,7 +21,7 @@
         </div>
 
         <section class="select-tip">
-          <label for="customTip">Select Tip %</label>
+          <h5>Select Tip %</h5>
 
           <div class="tip-container">
             <input type="radio" name="tip-option-list" value="5" id="option1">
@@ -51,7 +51,7 @@
 
             <input type="radio" name="tip-option-list" :value="customTip" id="option6">
             <div class="option">
-              <label for="option6">
+              <label for="customTip">
                 <input
                   type="number"
                   inputmode="numeric"
@@ -314,7 +314,7 @@ $white: hsl(0, 0%, 100%);
   .select-tip {
     margin: 25px 0;
 
-    & > label {
+    & > h5 {
       @include label_style();
     }
 
